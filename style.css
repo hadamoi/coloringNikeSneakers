@@ -1,0 +1,104 @@
+/*  Google Font CDN  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #e8e19b;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.pointWrap {
+  position: fixed;
+  right: 3%;
+  top: 40%;
+  z-index: 100;
+}
+
+.pointWrap li {
+  list-style: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: cornflowerblue;
+  margin-top: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-out;
+  opacity: 0.5;
+}
+
+.pointWrap li.active {
+  opacity: 1;
+}
+
+section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.inner {
+  position: relative;
+  width: fit-content;
+  padding: 120px;
+  margin-top: 50px;
+  z-index: 1000;
+}
+
+section img {
+  position: fixed;
+  right: 10%;
+  top: 20%;
+  opacity: 0;
+  width: 680px;
+  pointer-events: none;
+  z-index: 49;
+}
+
+section.active img {
+  opacity: 1;
+  pointer-events: all;
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 26px;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: tomato;
+}
+
+em {
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 6px;
+  font-size: 46px;
+  color: green;
+}
+
+h2 {
+  color: tomato;
+  text-transform: uppercase;
+  font-size: 28px;
+  margin: 0;
+}
+
+p {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+}
