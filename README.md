@@ -2,7 +2,7 @@
 You can color the Nike sneakers as you scroll.
 
 #### ✔️ Things to remember
-```sh
+```
 for(let i=0; i<totalNumber; i++) {
     section[i].classList.remove('active');
     pointBtn[i].classList.remove('active');
